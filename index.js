@@ -1,6 +1,10 @@
+let counter = 0;
+let ticketNumber = [];
+
 function takeANumber(currentLine, newPerson){
-  currentLine.push(newPerson);
-  return `Welcome, ${newPerson}. You are number ${currentLine.length} in line.`;
+  counter++;
+  currentLine.push(counter);
+  return `Welcome, ${newPerson}. Your ticket number is ${counter} in line.`;
 }
 
 function nowServing(currentLine){
